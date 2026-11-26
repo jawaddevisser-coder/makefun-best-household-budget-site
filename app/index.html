@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearth &amp; Ledger — Household Budget</title>
+<meta name="description" content="Hearth &amp; Ledger helps one household plan its month, track every dollar, and save for what matters.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/">
+    <span class="brand-mark" aria-hidden="true">⌂</span>
+    <span class="brand-name">Hearth <span>&amp;</span> Ledger</span>
+    <span class="brand-tag">the Alvarez household budget</span>
+  </a>
+  <nav class="mainnav" aria-label="Main">
+    <a href="#/" data-route="">Dashboard</a>
+    <a href="#/budget" data-route="budget">Budget</a>
+    <a href="#/transactions" data-route="transactions">Transactions</a>
+    <a href="#/goals" data-route="goals">Savings goals</a>
+    <a href="#/reports" data-route="reports">Reports</a>
+  </nav>
+  <div class="month-chip" id="monthChip">November 2026</div>
+</header>
+
+<main id="view" aria-live="polite"></main>
+
+<footer class="sitefoot">
+  <p><strong>Hearth &amp; Ledger</strong> — a budget kept by the Alvarez household, for the Alvarez household.
+  Figures shown are this household&rsquo;s real November 2026 numbers. Money added here is saved only in this browser.</p>
+  <p class="foot-links">
+    <a href="#/">Dashboard</a> · <a href="#/budget">Budget</a> · <a href="#/transactions">Transactions</a> ·
+    <a href="#/goals">Savings goals</a> · <a href="#/reports">Reports</a>
+  </p>
+</footer>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
